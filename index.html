@@ -19,13 +19,23 @@
         <img src="imagemsemdegrade.jpg" class="img" alt="logo">
     </picture>
     <h1> Agendamento de Espaço - UNEF</h1>
-    <h2> Informe a Data Desejada:</h2> 
-    <ul type="square"> </ul>
-        <li> Selecione uma data válida para que possamos verificar a disponibilidade.</li>
-
-    <h2>Informe o Turno Desejado:</h2>
-    <ul type="square"> </ul>
-        <li> Específico quanto ao período do dia (manhã, tarde ou noite) para garantir uma alocação adequada.</li>
+    <br>
+    <h2>
+    <form action="verificar.php" method="post" autocomplete="off"> 
+        <p><label for="Iuser">Usuario</label> <input type="text" name="User" id="Iuser" required minlength="5" size="25" placeholder="Nome do Usuario"> <label for="Isenha">Senha</label> <input type="password" name="Senha" id="Isenha" required minlength="8" size="25" placeholder="Digite sua senha">
+        </p>
+        <p><label for="Idata">Data:</label> <input type="date" name="data" id="Idata" size="30" required>
+            <label for="Iturno">Turno:</label> <input type="text" name="Turno" id="Iturno" size="26" required placeholder="Selecione o Turno">
+        </p>
+        <p>
+            <label for="Inicio">Inicio</label> <input type="time" name="Inicio" id="Iinicio">
+            <label for="Final">Final</label> <input type="time" name="Final" id="Ifinal">
+            <ul type="square"> </ul>            
+            <p> <input type="submit" value="Verificar">
+            <input type="reset" value="Apagar">
+        </p>
+    
+    
     </main>
     </head>
     
